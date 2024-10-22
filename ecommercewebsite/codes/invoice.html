@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body bgcolor="#90EE90">
+<center>
+<hr width="50%" align="center" color="pink"/>
+		<nav>
+			<a href="Homepage.html">Home </a> 
+			<a href="Products.html">Products</a>
+			<a href="invoice.html">Invoice</a>
+			<a href="aboutUs.html">About us</a>
+    </nav>		
+	
+<hr width="50%" align="center" color="pink"/>
+</center>
+<div class="container">
+        <header>
+            <h1>Invoice</h1>
+        </header>
+        <section class="invoice-details">
+            <h2>Bill To:</h2>
+            <div id="customer-info">
+                <input type="text" id="customer-name" placeholder="Customer Name" required>
+                <input type="text" id="customer-address" placeholder="Address" required>
+            </div>
+        </section>
+        <section class="invoice-items">
+            <h2>Items</h2>
+            <table id="items-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="items-body">
+                   
+                </tbody>
+            </table>
+            <button id="add-item">Add Item</button>
+        </section>
+        <footer>
+            <h3>Total: <span id="total-amount">$0.00</span></h3>
+            <button id="generate-invoice">Generate Invoice</button>
+        </footer>
+    </div>
+
+    <script src="invoice.js"></script>
+</body>
+</html>
